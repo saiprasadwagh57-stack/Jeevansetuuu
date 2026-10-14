@@ -1,0 +1,122 @@
+{
+  "entities": {
+    "hospitals": {
+      "fields": {
+        "id": { "type": "string" },
+        "hospitalId": { "type": "string" },
+        "name": { "type": "string" },
+        "type": { "type": "string" },
+        "district": { "type": "string" },
+        "state": { "type": "string" },
+        "pincode": { "type": "string" },
+        "contactPhone": { "type": "string" },
+        "emergencyLine": { "type": "string" },
+        "verified": { "type": "boolean" },
+        "verificationStatus": { "type": "string" },
+        "rating": { "type": "number" },
+        "submittedAt": { "type": "string" },
+        "password": { "type": "string" }
+      }
+    },
+    "doctors": {
+      "fields": {
+        "id": { "type": "string" },
+        "doctorId": { "type": "string" },
+        "hospitalId": { "type": "string" },
+        "hospitalName": { "type": "string" },
+        "name": { "type": "string" },
+        "specialty": { "type": "string" },
+        "experienceYears": { "type": "number" },
+        "qualification": { "type": "string" },
+        "consultationFee": { "type": "number" },
+        "mobile": { "type": "string" },
+        "rating": { "type": "number" },
+        "verified": { "type": "boolean" },
+        "password": { "type": "string" }
+      }
+    },
+    "appointments": {
+      "fields": {
+        "id": { "type": "string" },
+        "hospitalId": { "type": "string" },
+        "hospitalName": { "type": "string" },
+        "doctorId": { "type": "string" },
+        "doctorName": { "type": "string" },
+        "patientName": { "type": "string" },
+        "patientMobile": { "type": "string" },
+        "date": { "type": "string" },
+        "timeSlot": { "type": "string" },
+        "symptoms": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "reports": {
+      "fields": {
+        "id": { "type": "string" },
+        "patientMobile": { "type": "string" },
+        "patientName": { "type": "string" },
+        "doctorId": { "type": "string" },
+        "doctorName": { "type": "string" },
+        "hospitalId": { "type": "string" },
+        "hospitalName": { "type": "string" },
+        "reportType": { "type": "string" },
+        "reportUrl": { "type": "string" },
+        "diagnosis": { "type": "string" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "notifications": {
+      "fields": {
+        "id": { "type": "string" },
+        "targetRole": { "type": "string" },
+        "title": { "type": "string" },
+        "message": { "type": "string" },
+        "date": { "type": "string" },
+        "read": { "type": "boolean" },
+        "type": { "type": "string" }
+      }
+    },
+    "reviews": {
+      "fields": {
+        "id": { "type": "string" },
+        "hospitalId": { "type": "string" },
+        "doctorId": { "type": "string" },
+        "patientName": { "type": "string" },
+        "patientMobile": { "type": "string" },
+        "hospitalRating": { "type": "number" },
+        "doctorRating": { "type": "number" },
+        "comment": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "status": { "type": "string" }
+      }
+    },
+    "patients": {
+      "fields": {
+        "id": { "type": "string" },
+        "fullName": { "type": "string" },
+        "mobile": { "type": "string" },
+        "age": { "type": "number" },
+        "password": { "type": "string" }
+      }
+    },
+    "admins": {
+      "fields": {
+        "id": { "type": "string" },
+        "email": { "type": "string" },
+        "password": { "type": "string" }
+      }
+    },
+    "audit_logs": {
+      "fields": {
+        "id": { "type": "string" },
+        "adminId": { "type": "string" },
+        "adminEmail": { "type": "string" },
+        "action": { "type": "string" },
+        "timestamp": { "type": "string" },
+        "deviceInfo": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

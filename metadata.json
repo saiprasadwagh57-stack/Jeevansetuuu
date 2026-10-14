@@ -1,0 +1,6 @@
+{
+  "name": "Jeevan Setu",
+  "description": "Healthcare platform connecting Patients, Hospital Registration & Management, Doctors, and Admin Verification.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
